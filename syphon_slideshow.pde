@@ -74,7 +74,6 @@ void draw() {
 
       // resize?
       if (resizing) {
-        println("previous width: " + currentImg.width);
         if (currentImg.width >= currentImg.height) {
           // hot dog
           currentImg.resize(canvas.width, 0);
@@ -143,7 +142,7 @@ void refreshFolder() {
   //printArray(files);
   for (int i = 0; i < files.length; i++) {
 
-    if (files[i].getPath().endsWith("jpg"))
+    if (files[i].getPath().endsWith("jpg") || files[i].getPath().endsWith("png") || files[i].getPath().endsWith("jpeg") || files[i].getPath().endsWith("gif"))
       filesList.add(files[i]);
   }
 }
