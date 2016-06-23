@@ -50,9 +50,9 @@ void setup() {
   cp5 = new ControlP5(this);
   cp5.addSlider("photoChangeInterval")
     .setPosition(10, 10)
-    .setSize(200, 30)
-    .setRange(1, 20)
-    .setNumberOfTickMarks(20)
+    .setSize(400, 30)
+    .setRange(1, 40)
+    .setNumberOfTickMarks(40)
     .setLabel("Slide Duration")
     ;
   cp5.addToggle("resizing")
